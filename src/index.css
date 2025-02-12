@@ -1,6 +1,8 @@
 .left{
   height: 30vh;
-  margin: 0 40%;
+  padding: 1rem 40%;
+  width: 100%;
+  background-color: rgb(175, 175, 223);
   padding-top: 4rem;
 }
 button{
@@ -16,7 +18,7 @@ button{
 .right{
   background-color: purple;
   height: 50Vh;
-  text-align: center;
+ text-align: center;
   color: white;
 }
 .right h1{
@@ -24,12 +26,28 @@ button{
 }
 .right h3{
   padding: 2rem;
-  margin: 0 auto;
   background-color: navy;
   width: 40%;
 }
+.outer{
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
 
 .box{
-  margin:0.5rem auto;
+  margin:0.5rem ;
   width: 200px;
+  height: 100px;
+  padding-top: 2rem;
+  font-size: 1.4rem;
+  
+  position: relative;
 }
+span{
+  position: absolute;
+  top: 2px;
+  left:177px;
+}
+h2{text-align: center; font-size:2rem ;}
+
