@@ -25,8 +25,8 @@ function App() {
   return (
     <>
       <form className="left" onSubmit={addTask}>
-        <textarea placeholder='Add your Note' name='text' rows={4} cols={40} value={form.text} onChange={handleForm}> </textarea> <br />
-        <input type="color" value={form.color} name='color' onChange={handleForm} />
+        <textarea placeholder='Add your Note' name='text' rows={8} cols={40} value={form.text} onChange={handleForm} required> </textarea> <br />
+        <input type="color" value={form.color} name='color' onChange={handleForm} required/>
         <button type='submit' >AddTask</button>
       </form>
 
