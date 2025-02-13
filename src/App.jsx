@@ -18,8 +18,8 @@ function App() {
     const obj = {id:Date.now(), text: form.text, color: form.color }
     setNote([...note, obj])
   }
-   function deleteItem(item){
-    setNote(note.filter((box)=>box.id !== item.id))
+   function deleteItem(idToDelete){
+    setNote(note.filter((box)=>box.id !== idToDelete))
    }
 
   console.log(note);
@@ -38,7 +38,7 @@ function App() {
         <div className='outer'>
           {note.length > 0 ? (
             note.map((item) => {
-              return <div className="box" style={{ backgroundColor: item.color }} key={item.id}>  {item.text} <span><RxCross2 onClick={()=>deleteItem(item)} /> </span> </div>
+              return <div className="box" style={{ backgroundColor: item.color }} key={item.id}>  {item.text} <span><RxCross2 onClick={()=>deleteItem(item.id)} /> </span> </div>
             })
           )
             : "you have not added a note yet"}
